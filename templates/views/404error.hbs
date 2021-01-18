@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Page</title>
+</head>
+<style>
+    #page_404 {
+        padding: 40px 0;
+        background: #fff;
+        font-family: "Arvo", serif;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #page_404 img {
+        width: 100%;
+    }
+
+    #page_404 .four_zero_four_bg {
+        background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center;
+        margin-top: 2rem;
+
+    }
+
+    #page_404 .four_zero_four_bg h1 {
+        font-size: 80px;
+    }
+
+    #page_404 .four_zero_four_bg h3 {
+        font-size: 80px;
+    }
+
+    .link_404 {
+        background: #ffffff;
+        padding: 0.8rem 1.8rem;
+        margin-top: 2rem;
+        color: #28a745;
+        margin: 20px 0;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border: none;
+        outline: none;
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 8px 6px -6px #00fc3b;
+    }
+
+    .link_404:hover {
+        color: #ffffff;
+        background: #28a745;
+    }
+
+    .contant_box_404 {
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <section id="page_404">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-10 col-sm-offset-1 text-center">
+                        <div class="four_zero_four_bg">
+                            <h1 class="text-center"></h1>
+                        </div>
+                        <div class="contant_box_404">
+                            <h1>{{errorMsg}}</h1>
+                            <h3>Look like you're lost</h3>
+                            <p>the page you are looking for not avaible!</p>
+                            <a href="/" class="link_404">Go Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

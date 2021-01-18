@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>css}}
+    <title>Weather</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- main hedaer -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <form class="temp_form">
+                    <input type="text" id="cityName" placeholder="City Name" autocomplete="off"
+                        title="Enter Your City Name">
+                    <input type="submit" value="search" id="submitBtn">
+                </form>
+            </div>
+
+            <div id="box">
+                <div class="box">
+                    <div class="wave one"></div>
+                    <div class="wave two"></div>
+                    <div class="wave three"></div>
+                    <div id="temp_status">
+                        <i class="fab fa-accusoft"
+                            style="color:white; filter: drop-shadow(1px 1.5rem 1rem rgba(0, 0, 0, 0.5));"></i>
+                    </div>
+                    <div class="info">
+                        <h2 class="location "> <i class="fas fa-street-view" style="color: #ff793b"></i><i
+                                id="city_name"></i>
+                        </h2>
+                        <p id="date"> </p>
+                        <h1 class="temp"> <span id="temp">_</span> &deg;C</h1>
+                        <h3 class="tempmin_max">Feels <strong id="temp_fill">_</strong>&deg;C | Max
+                            <strong id="temp_max">_</strong>&deg;C
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    {{!-- footer code --}}
+    {{>footer}}
+    {{>js}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>

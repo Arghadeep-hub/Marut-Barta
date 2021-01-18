@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{>css}}
+    <title>About</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- main hedaer -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side division  -->
+                    <div class="col-md-6 col-12 main_header_right align-items-center">
+                        <figure>
+                            <img src="img/bg1.png" alt="Weather" class="img-fluid" title="Weather App">
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-12 main_header_left">
+                        <h2>About Me In Short Glimps</h2>
+                        <p>Hi, I am <span class="text_clr">Arghadeep Mallick</span>,
+                            pursuing B.Tech 2nd year in <span class="text_clr"> Computer Science and Engineering</span>
+                            from Maulana Abul
+                            Kalam Azad
+                            University of Technology, West
+                            Bengal with 8.36 YGPA. As part of my curriculum, I particularly found the subjects of
+                            Computer Programming and Design of Algorithms highly intriguing, as these subjects created
+                            in me a passion to study the CSE in much more detail.</p>
+                        <p>I am a programmer where I work on various programming languages such as <span
+                                class="text_clr"> C, Python, HTML, CSS,
+                                Bootstarap, JavaScript, AngularJS, NodeJS, MongoDB, php and WordPress.</span></p>
+                        <a href="https://coderargha.ml" target="_blank"><button>About Me</button></a>
+                    </div>
+                    <!-- right side division  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer code  -->
+    {{>footer}}
+    {{>js}}
+</body>
+
+</html>
